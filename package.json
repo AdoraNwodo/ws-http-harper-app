@@ -1,0 +1,21 @@
+{
+  "name": "ws-and-http-harper-app",
+  "version": "1.0.0",
+  "description": "A Harper application that showcases both HTTP (REST) and WebSocket (WS) interfaces for interacting with a database of books",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "harperdb": "^4.4.22",
+    "node-fetch": "^3.3.2",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}

@@ -1,0 +1,25 @@
+type Person {
+  name: String!
+  birth_year: Int
+  death_year: Int
+}
+
+type Format {
+  key: String!
+  value: String!
+}
+
+type Book @table @export {
+  id: ID @primaryKey
+  title: String!
+  subjects: [String!]
+  authors: [Person!]
+  summaries: [String!]
+  translators: [Person!]
+  bookshelves: [String!]
+  languages: [String!]
+  copyright: Boolean
+  media_type: String
+  formats: [Format!]
+  download_count: Int
+}
